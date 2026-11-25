@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For my sweet girl 🎀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ ПЕРШИЙ ЕКРАН ══ -->
+  <section class="screen" id="screen-one">
+
+    <!-- Стікери 1-го екрану (блакитний бантик, блакитні троянди, стебло) -->
+    <div class="sticker-layer">
+      <img src="s1_bow.png" class="sticker s1-bow-1" alt="" draggable="false" />
+      <img src="s1_bow.png" class="sticker s1-bow-2" alt="" draggable="false" />
+      <img src="s1_rose.png" class="sticker s1-rose-1" alt="" draggable="false" />
+      <img src="s1_rose.png" class="sticker s1-rose-2" alt="" draggable="false" />
+      <img src="s1_stem.png" class="sticker s1-stem-1" alt="" draggable="false" />
+      <img src="s1_stem.png" class="sticker s1-stem-2" alt="" draggable="false" />
+    </div>
+
+    <!-- Конверт у правому куті -->
+    <div class="envelope-wrap" id="envelope-btn" title="Відкрити листа">
+      <span class="envelope-bow">🎀</span>
+      <img src="envelope.jpg" alt="Конверт" class="envelope-img" />
+    </div>
+
+    <!-- Центральний блок -->
+    <div class="center-block">
+      <img src="cats.jpg" alt="cute cats" class="hero-photo" />
+      <h1 class="main-title">For my sweet girl</h1>
+
+      <div class="input-section">
+        <div class="label-row">
+          <span class="label-main">Enter a specific name-word:</span>
+          <span class="label-hint">It's in the envelope, and i like to call you that!&lt;3</span>
+        </div>
+
+        <div class="input-row">
+          <input
+            type="text"
+            id="keyword-input"
+            class="keyword-input"
+            placeholder="Введи слово..."
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+
+        <div class="answer-row">
+          <span id="answer-text" class="answer-text"></span>
+          <button id="next-btn" class="next-btn" style="display:none">Next&lt;3</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══ ДРУГИЙ ЕКРАН ══ -->
+  <section class="screen" id="screen-two" style="display:none">
+
+    <!-- Стікери 2-го екрану (рожева троянда, рожевий бантик, піксельні сердечка) -->
+    <div class="sticker-layer">
+      <img src="s2_rose.png" class="sticker s2-rose-1" alt="" draggable="false" />
+      <img src="s2_rose.png" class="sticker s2-rose-2" alt="" draggable="false" />
+      <img src="s2_bow.png" class="sticker s2-bow-1" alt="" draggable="false" />
+      <img src="s2_bow.png" class="sticker s2-bow-2" alt="" draggable="false" />
+      <img src="s2_hearts.png" class="sticker s2-hearts-1" alt="" draggable="false" />
+      <img src="s2_hearts.png" class="sticker s2-hearts-2" alt="" draggable="false" />
+    </div>
+
+    <h2 class="s2-title">Open the gift! 🎉</h2>
+
+    <!-- Подарунок -->
+    <img src="gift_closed.jpg" id="gift-img" class="gift-img" alt="Подарунок" draggable="false" />
+
+    <!-- Синій котик + підпис -->
+    <div class="cat-corner" id="cat-corner">
+      <p class="cat-hint">Maybe this kitty has something🤔</p>
+      <div class="paw-zone" id="paw-zone" title="Натисни на лапку!"></div>
+      <img src="blue_cat.jpg" id="cat-img" class="cat-img" alt="Синій котик" draggable="false" />
+    </div>
+
+    <!-- Ключ -->
+    <img src="key.jpg" id="key-el" class="key-el" alt="Ключ" draggable="false" />
+
+    <!-- Аудіо подарунка -->
+    <audio id="gift-audio" src="gift_music.mp3" preload="auto"></audio>
+
+  </section>
+
+  <!-- ══ ОВЕРЛЕЙ ЛИСТА ══ -->
+  <div class="letter-overlay" id="letter-overlay">
+    <div class="letter-wrapper">
+      <img src="letter.jpg" alt="Лист" class="letter-img" id="letter-img" />
+      <div class="letter-text">
+        <p class="letter-body">
+          Дорога, любима моя Киро!<br><br>
+          Я вітаю тебе з Днем Народження🎉!! Моя киця, від щирого серця бажаю тобі
+          здійснення усіх твоїх мрій! Найщирішого тобі щастя, найяскравіших
+          днів у житті, якнайбільше чудових новин, найміцнішого, як Bacardi,
+          здоров'я, найшаленішого кохання (зі мною, ofc😘) та всього
+          найкращого у цьому світі!!! Бо ти цього варта💝.
+        </p>
+        <p class="letter-sign">
+          Люблю тебе, моя <span class="letter-name">Кируня</span>💞
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ ОВЕРЛЕЙ КОЛАЖУ (після відкриття подарунка) ══ -->
+  <div class="collage-overlay" id="collage-overlay">
+    <div class="collage-card">
+      <img src="collage.jpg" id="collage-img" class="collage-img" alt="З Днем Народження" draggable="false" />
+    </div>
+  </div>
+
+  <!-- ══ АУДІО ══ -->
+  <audio id="site-music"    src="site_music.mp3"    preload="auto" loop></audio>
+  <audio id="sound-correct" src="sound_correct.mp3" preload="auto"></audio>
+  <audio id="meow-audio"    src="meow.mp3"          preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
